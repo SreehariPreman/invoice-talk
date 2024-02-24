@@ -8,6 +8,8 @@ from PIL import Image
 #InvoiceTalk: Conversational AI for Invoice Interpretation"
 st.title("Invoice-Talk")
 
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
 def get_gemini_response(input,image,user_prompt):
     model=genai.GenerativeModel('gemini-pro-vision')
     response=model.generate_content([input,image[0],user_prompt])
