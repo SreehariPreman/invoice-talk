@@ -1,1 +1,1 @@
-# invoice-talk
+# InvoiceTalk: Conversational AI for Invoice Interpretation
